@@ -17,16 +17,67 @@
       lng: 11.00902,
       lat: 76.95997,
       name: "Brookfields Mall",
+      color: "#FF0000",
     },
     {
       lng: 11.022849,
       lat: 76.951635,
       name: "SR Tranzcars, Saibaba Koil",
+      color: "#FF0000",
     },
     {
       lng: 11.00269216,
       lat: 77.0387079,
       name: "IOCL Shanthi Social Services, Singanallur",
+      color: "#FF0000",
+    },
+    {
+      lng: 11.0706702,
+      lat: 76.9988664,
+      name: "DC",
+      color: "#FFA500",
+    },
+    {
+      lng: 11.031058,
+      lat: 77.038549,
+      name: "DC",
+      color: "#FFA500",
+    },
+    {
+      lng: 11.025281381418203,
+      lat: 77.01098024779436,
+      name: "DC",
+      color: "#FFA500",
+    },
+    {
+      lng: 10.999479851953545,
+      lat: 77.02488288641993,
+      name: "DC",
+      color: "#FFA500",
+    },
+    {
+      lng: 11.0162618,
+      lat: 76.9699463,
+      name: "Canditate Point",
+      color: "#FFFF00",
+    },
+    {
+      lng: 11.017114,
+      lat: 76.953749,
+      name: "Canditate Point",
+      color: "#FFFF00",
+    },
+    {
+      lng: 11.055021,
+      lat: 76.994646,
+      name: "Canditate Point",
+      color: "#FFFF00",
+    },
+    {
+      lng: 11.013017,
+      lat: 76.985896,
+      name: "Canditate Point",
+      color: "#FFFF00",
     },
   ];
 
@@ -54,13 +105,13 @@
     // Add markers based on evC
     evC.forEach((ev) => {
       new Marker({
-        color: "#FF0000",
+        color: ev.color,
       })
         .setLngLat([ev.lat, ev.lng])
         .setPopup(new Popup().setText(ev.name))
         .addTo(map);
 
-        map.setCenter([ev.lat, ev.lng]);
+      map.setCenter([ev.lat, ev.lng]);
     });
 
     // gets the current location, create a marker with red color and seek to it
