@@ -89,54 +89,73 @@
       lat: 77.35042,
       name: "Sri Sakthi Cinemas",
       provider: "Zeon Chargers",
+      ports: 1,
+      chargingType: "Fast"
     },
     {
       lng: 11.175093,
       lat: 77.263374,
       name: "SREE ANNAPOORNA HOTEL",
       provider: "Zeon Chargers",
+      ports: 1,
+      chargingType: "Fast"
     },
     {
       lng: 11.213022,
       lat: 77.441968,
       name: "IOCL COCO",
       provider: "Tata Power - CCS2 & slow chargers",
+      ports: 1,
+      chargingType: "Normal"
     },
     {
       lng: 11.30199446,
       lat: 77.60004376,
       name: "RMS Towers (Ero_G Electric Charging Station)",
       provider: "Relux Electric",
+      ports: 1,
+      chargingType: "Fast"
     },
     {
       lng: 11.519342,
       lat: 77.935042,
       name: "SHREE SARAVANA BHAVAN",
       provider: "Zeon Chargers",
+      ports: 4,
+      chargingType: "Fast"
     },
     {
       lng: 11.5213,
       lat: 77.93434,
       name: "Sree Saravana Bhavan",
       provider: "Zeon Chargers",
+      ports: 1,
+      chargingType: "Fast"
     },
     {
       lng: 11.4922712,
       lat: 78.1535774,
       name: "Adyar Ananda Bhavan",
       provider: "Zeon Chargers",
+      ports: 3,
+      chargingType: "Fast"
     },
     {
       lng: 11.682985,
       lat: 78.1260402,
       name: "True Sai Motors",
       provider: "Tata Power - CCS2 & slow chargers",
+      ports: 2,
+      chargingType: "Normal"
     },
     {
       lng: 10.9984009,
       lat: 76.9765316,
       name: "Richy Rich",
       provider: "Ather",
+      ports: 4,
+      portTypes: { AC: 2, Ather: 2},
+      chargingType: "Fast"
     },
     {
       lng: 11.00269216,
@@ -149,6 +168,8 @@
       lat: 77.05765,
       name: "PPS Motors",
       provider: "Tata Power - CCS2 & slow chargers",
+      ports: 2,
+      chargingType: "Fast"
     },
   ];
 
