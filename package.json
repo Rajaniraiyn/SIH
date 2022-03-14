@@ -21,6 +21,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@mapbox/mapbox-gl-directions": "^4.1.0",
     "maplibre-gl": "^1.15.2",
     "sirv-cli": "^1.0.0"
   }

@@ -38,17 +38,19 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: 'public/build/bundle.js',
 	},
 	plugins: [
 		replace({
-      _process: JSON.stringify({
-        env: {
-          API_KEY: process.env.API_KEY
-        }
-      }),
-    }),
-		
+			preventAssignment: true,
+			_process: JSON.stringify({
+				env: {
+					MAPBOX_API_KEY: process.env.MAPBOX_API_KEY,
+					MAPLIBRE_API_KEY: process.env.MAPLIBRE_API_KEY,
+				}
+			}),
+		}),
+
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
@@ -80,7 +82,7 @@ export default {
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		production && terser()
+		production && terser(),
 	],
 	watch: {
 		clearScreen: false
